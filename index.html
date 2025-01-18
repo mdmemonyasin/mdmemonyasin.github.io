@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Full-Stack Web Developer Course</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Optional: Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+      /* Hero Section Styles */
+      .hero-section {
+        background: url("YOUR-HERO-IMAGE.jpg") center center/cover no-repeat;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4); /* Overlay for readability */
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+      }
+      .hero-btn {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        padding: 0.7rem 1.5rem;
+      }
+
+      /* Course Features */
+      .feature-icon {
+        font-size: 2rem;
+        color: #0d6efd; /* Bootstrap primary color */
+        margin-bottom: 1rem;
+      }
+
+      /* Testimonials */
+      .testimonial {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 1.5rem;
+        text-align: center;
+      }
+
+      /* Footer */
+      footer {
+        background: #f8f9fa;
+        padding: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">MyCourse</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="#course">Course Info</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="#enroll" class="btn btn-primary ms-lg-3">Enroll Now</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section d-flex" id="home">
+      <div class="container hero-content">
+        <h1 class="display-4 fw-bold">Become a Full-Stack Web Developer</h1>
+        <p class="lead">
+          Master HTML, CSS, JavaScript, React, Node.js, and more in our
+          comprehensive course.
+        </p>
+        <a href="#enroll" class="btn btn-primary hero-btn">Join Now</a>
+      </div>
+    </section>
+
+    <!-- COURSE OVERVIEW -->
+    <section class="py-5" id="course">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Course Overview</h2>
+        <p class="mb-5">
+          Dive into modern web development with our project-based curriculum.
+          From frontend basics to backend mastery, you’ll gain the skills to
+          build and deploy full-stack applications.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <i class="fa-solid fa-code feature-icon"></i>
+            <h5>Front-end Essentials</h5>
+            <p>
+              Learn HTML5, CSS3, Bootstrap, and responsive design for modern web
+              pages.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa-solid fa-brain feature-icon"></i>
+            <h5>JavaScript Mastery</h5>
+            <p>
+              Grasp core concepts of ES6, DOM manipulation, and frameworks like
+              React.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa-solid fa-server feature-icon"></i>
+            <h5>Backend & Deployment</h5>
+            <p>
+              Build RESTful APIs with Node.js, Express, MongoDB, and deploy to
+              the cloud.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="bg-light py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Why Choose This Course?</h2>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-3">
+            <div class="p-3">
+              <i class="fa-solid fa-users feature-icon"></i>
+              <h6 class="fw-semibold">Community & Mentorship</h6>
+              <p>
+                Interact with fellow learners and get guidance from expert
+                mentors.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-3">
+              <i class="fa-solid fa-laptop-code feature-icon"></i>
+              <h6 class="fw-semibold">Hands-On Projects</h6>
+              <p>
+                Work on real-world projects, building your portfolio as you
+                learn.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-3">
+              <i class="fa-solid fa-trophy feature-icon"></i>
+              <h6 class="fw-semibold">Job-Ready Skills</h6>
+              <p>Acquire in-demand skills that top tech companies look for.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-5" id="testimonials">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5">What Our Students Say</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial p-4">
+              <p class="mb-3">
+                “This course took me from zero to a full-stack job. Highly
+                recommended!”
+              </p>
+              <h6 class="fw-bold">— Jane D.</h6>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial p-4">
+              <p class="mb-3">
+                “Great mentorship and real-world projects. I landed my first
+                developer role!”
+              </p>
+              <h6 class="fw-bold">— John S.</h6>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial p-4">
+              <p class="mb-3">
+                “The best full-stack curriculum out there with up-to-date
+                technologies.”
+              </p>
+              <h6 class="fw-bold">— Maria L.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="py-5 bg-light" id="pricing">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Pricing & Enrollment</h2>
+        <p class="mb-4">
+          Choose the plan that fits you best. Start your full-stack journey now!
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Basic</h5>
+                <p class="card-text display-6 fw-semibold">$99</p>
+                <ul class="list-unstyled">
+                  <li>Access to core modules</li>
+                  <li>Community support</li>
+                </ul>
+                <a href="#enroll" class="btn btn-primary mt-3">Enroll Basic</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Pro</h5>
+                <p class="card-text display-6 fw-semibold">$199</p>
+                <ul class="list-unstyled">
+                  <li>Everything in Basic</li>
+                  <li>Live mentorship</li>
+                  <li>Certification</li>
+                </ul>
+                <a href="#enroll" class="btn btn-primary mt-3">Enroll Pro</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Ultimate</h5>
+                <p class="card-text display-6 fw-semibold">$299</p>
+                <ul class="list-unstyled">
+                  <li>Everything in Pro</li>
+                  <li>1-on-1 coaching</li>
+                  <li>Job referral program</li>
+                </ul>
+                <a href="#enroll" class="btn btn-primary mt-3"
+                  >Enroll Ultimate</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENROLL FORM / CONTACT SECTION -->
+    <section class="py-5" id="contact">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-4">Ready to Join?</h2>
+        <p class="text-center mb-5">
+          Fill out the form below to enroll or ask any questions you have.
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form id="enroll">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="plan" class="form-label">Select Plan</label>
+                <select class="form-select" id="plan" required>
+                  <option value="">Choose...</option>
+                  <option value="Basic">Basic - $99</option>
+                  <option value="Pro">Pro - $199</option>
+                  <option value="Ultimate">Ultimate - $299</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Enroll Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container text-center">
+        <p class="mb-1">© 2025 MyCourse Inc. All Rights Reserved.</p>
+        <p>
+          <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+          <a href="#" class="text-decoration-none">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (CDN) + Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
