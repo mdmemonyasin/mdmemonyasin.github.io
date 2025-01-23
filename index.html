@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       defer
@@ -135,7 +139,7 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
       <div class="container">
         <a class="navbar-brand" href="#">
           <i class="ri-store-2-line"></i> Rajnandgaon Directory
@@ -174,11 +178,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" aria-label="Hero section">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-lg-8 hero-content">
-            <h1>Find Local Businesses</h1>
+            <h1 class="display-4 mb-4">Find Local Businesses</h1>
             <p class="lead mb-4">
               Discover and connect with trusted businesses in Rajnandgaon
             </p>
@@ -188,23 +192,28 @@
     </section>
 
     <!-- Search and Filter Section -->
-    <section class="search-filter-section">
+    <section class="search-filter-section" aria-label="Search and filters">
       <div class="container">
         <div class="search-filter-container">
           <div class="row g-3">
             <div class="col-md-8">
               <div class="search-wrapper">
-                <i class="ri-search-line"></i>
+                <i class="ri-search-line" aria-hidden="true"></i>
                 <input
                   type="text"
                   class="form-control"
                   id="searchInput"
-                  placeholder="Search business name, category..."
+                  placeholder="Search by business name, owner, or category..."
+                  aria-label="Search businesses"
                 />
               </div>
             </div>
             <div class="col-md-4">
-              <select class="form-select" id="categoryFilter">
+              <select
+                class="form-select"
+                id="categoryFilter"
+                aria-label="Filter by category"
+              >
                 <option value="">All Categories</option>
               </select>
             </div>
@@ -216,50 +225,50 @@
     <!-- Main Content -->
     <main class="main-content">
       <div class="container">
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="text-center py-5 d-none">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+
         <!-- Business Cards -->
         <div
           id="businessCards"
           class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4"
+          aria-live="polite"
         >
           <!-- Cards will be injected here -->
         </div>
 
         <!-- Pagination -->
-        <div class="pagination-container">
-          <span id="currentPage" class="d-none">1</span>
-          <div id="pagination"></div>
+        <div class="pagination-container" aria-label="Page navigation">
+          <span id="currentPage" class="visually-hidden">1</span>
+          <div id="pagination" class="pagination-wrapper"></div>
         </div>
       </div>
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-dark text-white py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>About Us</h5>
-            <p>
-              &copy; 2024 Rajnandgaon Business Directory. All rights reserved.
-            </p>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h6>Rajnandgaon Business Directory</h6>
+          <p>Your one-stop destination for discovering local businesses</p>
+          <div class="developer-info">
+            <p><i class="ri-code-line"></i> Developed by: Mohammad Yasin</p>
+            <a href="tel:+917869044792" class="developer-contact">
+              <i class="ri-phone-line"></i> +91 7869044792
+            </a>
           </div>
-          <div class="col-md-4">
-            <h5>Contact</h5>
-            <p>
-              Email:
-              <a href="mailto:memonyasin3@gmail.com" class="text-warning"
-                >memonyasin3@gmail.com</a
-              >
-            </p>
-            <p>Phone: 7869044792</p>
-          </div>
-          <div class="col-md-4">
-            <h5>Get Involved</h5>
-            <a
-              href="https://airtable.com/apptWWOkVCRAJp9al/shr3YYzYmzoUa4SlK"
-              class="btn btn-primary"
-              >Request to Add Details</a
-            >
-          </div>
+        </div>
+        <div class="footer-cta">
+          <button class="btn-list-business">
+            <i class="ri-store-line"></i> List Your Business
+          </button>
+        </div>
+        <div class="footer-copyright">
+          © 2024 Rajnandgaon Business Directory. All rights reserved.
         </div>
       </div>
     </footer>

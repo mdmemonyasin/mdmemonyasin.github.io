@@ -1,12 +1,25 @@
 // script.js
 
+const showLoading = () => {
+  document.getElementById("loadingSpinner").classList.remove("d-none");
+  document.getElementById("businessCards").classList.add("d-none");
+};
+
+const hideLoading = () => {
+  document.getElementById("loadingSpinner").classList.add("d-none");
+  document.getElementById("businessCards").classList.remove("d-none");
+};
+
 const fetchData = async () => {
+  showLoading();
   try {
     const response = await fetch("data.json"); // JSON file containing your data
     return await response.json();
   } catch (error) {
     console.error("Error fetching data:", error);
     return [];
+  } finally {
+    hideLoading();
   }
 };
 
@@ -22,8 +35,13 @@ const renderCards = (businesses, page = 1) => {
   const paginatedBusinesses = businesses.slice(start, end);
 
   if (paginatedBusinesses.length === 0) {
-    container.innerHTML =
-      '<div class="col-12 text-center"><p>No businesses found.</p></div>';
+    container.innerHTML = `
+      <div class="col-12">
+        <div class="no-results">
+          <i class="ri-error-warning-line"></i>
+          <p>No businesses found.</p>
+        </div>
+      </div>`;
     return;
   }
 
@@ -33,13 +51,31 @@ const renderCards = (businesses, page = 1) => {
     card.innerHTML = `
       <div class="card h-100">
         <div class="card-body">
-          <span class="highlight-category">${business.category}</span>
+          <div class="category-wrapper">
+            ${business.category
+              .map((cat) => `<span class="highlight-category">${cat}</span>`)
+              .join("")}
+          </div>
           <h5 class="card-title">${business.name}</h5>
-          <p class="card-text">Owner: ${business.owner}</p>
+          <p class="card-text"><i class="ri-user-line"></i> ${
+            business.owner
+          }</p>
           <div class="contact-info">
-            <p><i class="ri-phone-line me-2"></i><a href="tel:${business.mobile}">${business.mobile}</a></p>
-            <p><i class="ri-whatsapp-line me-2"></i><a href="https://wa.me/${business.whatsapp}" target="_blank">${business.whatsapp}</a></p>
-            <p><i class="ri-map-pin-line me-2"></i>${business.address}</p>
+            <a href="tel:${
+              business.mobile
+            }" class="contact-link" aria-label="Call ${business.mobile}">
+              <i class="ri-phone-line"></i> ${business.mobile}
+            </a>
+            <a href="https://wa.me/${
+              business.whatsapp
+            }" class="contact-link" target="_blank" rel="noopener" aria-label="WhatsApp ${
+      business.whatsapp
+    }">
+              <i class="ri-whatsapp-line"></i> ${business.whatsapp}
+            </a>
+            <p class="address">
+              <i class="ri-map-pin-line"></i> ${business.address}
+            </p>
           </div>
         </div>
       </div>
@@ -196,6 +232,7 @@ const setupPagination = (businesses) => {
 };
 
 const init = async () => {
+  document.documentElement.style.scrollBehavior = "smooth";
   const businesses = await fetchData();
   renderCards(businesses, currentPage);
   populateCategories(businesses);
