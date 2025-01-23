@@ -21,6 +21,12 @@ const renderCards = (businesses, page = 1) => {
   const end = start + ITEMS_PER_PAGE;
   const paginatedBusinesses = businesses.slice(start, end);
 
+  if (paginatedBusinesses.length === 0) {
+    container.innerHTML =
+      '<div class="col-12 text-center"><p>No businesses found.</p></div>';
+    return;
+  }
+
   paginatedBusinesses.forEach((business) => {
     const card = document.createElement("div");
     card.className = "col";
@@ -103,6 +109,11 @@ const setupPagination = (businesses) => {
   const paginationContainer = document.getElementById("pagination");
   const totalPages = Math.ceil(businesses.length / ITEMS_PER_PAGE);
 
+  if (totalPages <= 1) {
+    paginationContainer.innerHTML = "";
+    return;
+  }
+
   const updatePagination = () => {
     let paginationHTML = `
       <button class="btn btn-sm btn-outline-primary me-2" id="prevPage" ${
@@ -121,7 +132,9 @@ const setupPagination = (businesses) => {
         paginationHTML += `
           <button class="btn btn-sm ${
             i === currentPage ? "btn-primary" : "btn-outline-primary"
-          } me-2 page-number">${i}</button>
+          } me-2 page-number">
+            ${i}
+          </button>
         `;
       } else if (i === currentPage - 2 || i === currentPage + 2) {
         paginationHTML += `<span class="mx-1">...</span>`;
@@ -138,30 +151,45 @@ const setupPagination = (businesses) => {
 
     paginationContainer.innerHTML = paginationHTML;
 
-    // Add event listeners
-    document.getElementById("prevPage").addEventListener("click", () => {
-      if (currentPage > 1) {
-        currentPage--;
-        renderCards(businesses, currentPage);
-        updatePagination();
-      }
-    });
+    // Add event listeners after updating the pagination HTML
+    const addPaginationListeners = () => {
+      const prevBtn = document.getElementById("prevPage");
+      const nextBtn = document.getElementById("nextPage");
+      const pageButtons = document.querySelectorAll(".page-number");
 
-    document.getElementById("nextPage").addEventListener("click", () => {
-      if (currentPage < totalPages) {
-        currentPage++;
-        renderCards(businesses, currentPage);
-        updatePagination();
+      if (prevBtn) {
+        prevBtn.addEventListener("click", () => {
+          if (currentPage > 1) {
+            currentPage--;
+            renderCards(businesses, currentPage);
+            updatePagination();
+          }
+        });
       }
-    });
 
-    document.querySelectorAll(".page-number").forEach((button) => {
-      button.addEventListener("click", (e) => {
-        currentPage = parseInt(e.target.textContent);
-        renderCards(businesses, currentPage);
-        updatePagination();
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          if (currentPage < totalPages) {
+            currentPage++;
+            renderCards(businesses, currentPage);
+            updatePagination();
+          }
+        });
+      }
+
+      pageButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          const newPage = parseInt(e.target.textContent);
+          if (newPage !== currentPage) {
+            currentPage = newPage;
+            renderCards(businesses, currentPage);
+            updatePagination();
+          }
+        });
       });
-    });
+    };
+
+    addPaginationListeners();
   };
 
   updatePagination();

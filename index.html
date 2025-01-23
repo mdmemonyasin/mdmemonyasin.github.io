@@ -219,27 +219,15 @@
         <!-- Business Cards -->
         <div
           id="businessCards"
-          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4"
         >
           <!-- Cards will be injected here -->
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <span class="highlight-category">Category Name</span>
-                <h5 class="card-title">Business Name</h5>
-                <p class="card-text">
-                  Business description goes here. It should be brief and
-                  informative.
-                </p>
-                <button class="btn-details">More Details</button>
-              </div>
-            </div>
-          </div>
         </div>
 
         <!-- Pagination -->
-        <div id="pagination" class="mb-4">
-          <!-- Pagination buttons will be inserted here -->
+        <div class="pagination-container">
+          <span id="currentPage" class="d-none">1</span>
+          <div id="pagination"></div>
         </div>
       </div>
     </main>
