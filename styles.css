@@ -584,3 +584,13 @@ body {
     gap: 1.5rem;
   }
 }
+
+/* Business CTA */
+.business-cta {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.business-cta:hover {
+  background-color: #0056b3;
+}
