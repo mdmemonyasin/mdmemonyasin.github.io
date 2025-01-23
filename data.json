@@ -9,9 +9,7 @@
     "communicationAddress": "Office :- Zamzam Market",
     "mobile": "8770881212",
     "whatsapp": "9098161617",
-    "category": [
-      "FABRICATION"
-    ],
+    "category": ["FABRICATION"],
     "occupation": "Business"
   },
   {
@@ -24,9 +22,7 @@
     "communicationAddress": "Gol bazar",
     "mobile": "09098539572",
     "whatsapp": "9098539572",
-    "category": [
-      "OTHERS"
-    ],
+    "category": ["OTHERS"],
     "occupation": "Business"
   },
   {
@@ -39,9 +35,7 @@
     "communicationAddress": "नई गंज मंडी ",
     "mobile": "8770365538",
     "whatsapp": "8770365538",
-    "category": [
-      "FABRICATION"
-    ],
+    "category": ["FABRICATION"],
     "occupation": "Business"
   },
   {
@@ -54,9 +48,7 @@
     "communicationAddress": "Lakholi naka rajnandgaon ",
     "mobile": "9827969983",
     "whatsapp": "9827969983",
-    "category": [
-      "FABRICATION"
-    ],
+    "category": ["FABRICATION"],
     "occupation": "Business"
   },
   {
@@ -69,9 +61,7 @@
     "communicationAddress": "Sanju mobile, Ganj chowk rajnandgaon",
     "mobile": "8817262888",
     "whatsapp": "8817262888",
-    "category": [
-      "OTHERS"
-    ],
+    "category": ["OTHERS"],
     "occupation": "Job"
   },
   {
@@ -84,9 +74,7 @@
     "communicationAddress": "NEAR IMAM CHOWK ",
     "mobile": "7224906831",
     "whatsapp": "9827155936",
-    "category": [
-      "FABRICATION"
-    ],
+    "category": ["FABRICATION"],
     "occupation": "Business"
   },
   {
@@ -99,9 +87,7 @@
     "communicationAddress": "sabun",
     "mobile": "9399337726",
     "whatsapp": "8120642786",
-    "category": [
-      "WHOLESELLER AND RETAILER"
-    ],
+    "category": ["WHOLESELLER AND RETAILER"],
     "occupation": "Business"
   },
   {
@@ -114,9 +100,7 @@
     "communicationAddress": "",
     "mobile": "8817737427",
     "whatsapp": "8817737427",
-    "category": [
-      "BANKER"
-    ],
+    "category": ["BANKER"],
     "occupation": "Job"
   },
   {
@@ -129,9 +113,7 @@
     "communicationAddress": "Rajnandgaon ",
     "mobile": "9131911992",
     "whatsapp": "9131911992",
-    "category": [
-      "IT"
-    ],
+    "category": ["IT"],
     "occupation": "Business"
   },
   {
@@ -144,9 +126,7 @@
     "communicationAddress": "Haldi ward no. 51",
     "mobile": "8839187700",
     "whatsapp": "8839187700",
-    "category": [
-      "WHOLESELLER AND RETAILER"
-    ],
+    "category": ["WHOLESELLER AND RETAILER"],
     "occupation": "Business"
   },
   {
@@ -159,9 +139,20 @@
     "communicationAddress": "Old ganj chowk ",
     "mobile": "9399633261",
     "whatsapp": "9399633261",
-    "category": [
-      "SCRAP"
-    ],
+    "category": ["SCRAP"],
+    "occupation": "Business"
+  },
+  {
+    "id": "recGpIASE9nwP1Sts",
+    "name": "Ayan steel/steel and pipes ",
+    "owner": "Mohammed Junaid Sheikh",
+    "description": "Stainless steel pipe wholesaler and all product related by Stenles steel making",
+    "type": "",
+    "address": "Nandai rode old kanji house shop no 06",
+    "communicationAddress": "",
+    "mobile": "(877) 031-5493",
+    "whatsapp": "(977) 046-1990",
+    "category": ["STEEL-WORK", "FABRICATION"],
     "occupation": "Business"
   },
   {
@@ -174,9 +165,7 @@
     "communicationAddress": "",
     "mobile": "9424135338",
     "whatsapp": "9424135338",
-    "category": [
-      "OTHERS"
-    ],
+    "category": ["OTHERS"],
     "occupation": "Business"
   },
   {
@@ -189,9 +178,7 @@
     "communicationAddress": "",
     "mobile": "7415846488",
     "whatsapp": "7415846488",
-    "category": [
-      "LOGISTICS"
-    ],
+    "category": ["LOGISTICS"],
     "occupation": "Job"
   },
   {
@@ -204,9 +191,20 @@
     "communicationAddress": "",
     "mobile": "9300323366",
     "whatsapp": "9300323366",
-    "category": [
-      "EDUCATION"
-    ],
+    "category": ["EDUCATION"],
+    "occupation": "Business"
+  },
+  {
+    "id": "recL4yWYVkK2XjsZD",
+    "name": "Ayan glass & steel",
+    "owner": "Zunaid khan",
+    "description": "All type of tuffon glass,upvc, steel railing work are done here",
+    "type": "",
+    "address": "Haldi ward no.51",
+    "communicationAddress": "zunaidk292@gmail.com",
+    "mobile": "08319757572",
+    "whatsapp": "(831) 975-7572",
+    "category": ["FABRICATION", "UPVC - GLASS", "STEEL-WORK"],
     "occupation": "Business"
   },
   {
@@ -219,9 +217,7 @@
     "communicationAddress": "Kailash Nagar behind United hospital Rajnandgaon ",
     "mobile": "9589341313",
     "whatsapp": "9589341313",
-    "category": [
-      "BANKER"
-    ],
+    "category": ["BANKER"],
     "occupation": "Job"
   },
   {
@@ -234,9 +230,7 @@
     "communicationAddress": "Imam chowk ",
     "mobile": "9752992300",
     "whatsapp": "9752992300",
-    "category": [
-      "DECORATION"
-    ],
+    "category": ["DECORATION"],
     "occupation": "Business"
   },
   {
@@ -249,9 +243,7 @@
     "communicationAddress": "Dongargarh",
     "mobile": "9907952141",
     "whatsapp": "9907952141",
-    "category": [
-      "REPAIRING"
-    ],
+    "category": ["REPAIRING"],
     "occupation": "Business"
   },
   {
@@ -264,9 +256,7 @@
     "communicationAddress": "Agarwal transport parakh diagnostic ke baju",
     "mobile": "7974298075",
     "whatsapp": "7974298075",
-    "category": [
-      "REAL ESTATE"
-    ],
+    "category": ["REAL ESTATE"],
     "occupation": "Real estate"
   },
   {
@@ -279,9 +269,7 @@
     "communicationAddress": "Anupam Nagar, Rajnandgaon (c.g.) 491441",
     "mobile": "7869838307",
     "whatsapp": "7869838307",
-    "category": [
-      "WHOLESELLER AND RETAILER"
-    ],
+    "category": ["WHOLESELLER AND RETAILER"],
     "occupation": "Business"
   },
   {
@@ -294,9 +282,7 @@
     "communicationAddress": "Gole bazar masjid rajnandgaon ",
     "mobile": "7999634443",
     "whatsapp": "7999634443",
-    "category": [
-      "WHOLESELLER AND RETAILER"
-    ],
+    "category": ["WHOLESELLER AND RETAILER"],
     "occupation": "Business"
   },
   {
@@ -309,9 +295,7 @@
     "communicationAddress": "Chichola road chhuriya ",
     "mobile": "8770408398",
     "whatsapp": "9826767769",
-    "category": [
-      "LIFESTYLE"
-    ],
+    "category": ["LIFESTYLE"],
     "occupation": "Business"
   },
   {
@@ -324,9 +308,7 @@
     "communicationAddress": "Gauri Nagar Rajnandgaon ",
     "mobile": "7998884400",
     "whatsapp": "7998884400",
-    "category": [
-      "LIFESTYLE"
-    ],
+    "category": ["LIFESTYLE"],
     "occupation": "Business"
   },
   {
@@ -339,9 +321,7 @@
     "communicationAddress": "Haldi ward no. 51",
     "mobile": "7999938922",
     "whatsapp": "7999938922",
-    "category": [
-      "WHOLESELLER AND RETAILER"
-    ],
+    "category": ["WHOLESELLER AND RETAILER"],
     "occupation": "Business"
   },
   {
@@ -354,9 +334,7 @@
     "communicationAddress": "Opposite khotwali thana GE road (RJN)",
     "mobile": "9827699691",
     "whatsapp": "9827699691",
-    "category": [
-      "HOTELS & RESTAURANT"
-    ],
+    "category": ["HOTELS & RESTAURANT"],
     "occupation": "Business"
   },
   {
@@ -369,9 +347,7 @@
     "communicationAddress": "Old bus stand bharkpara rajnandgaon ",
     "mobile": "9424135338",
     "whatsapp": "9424135338",
-    "category": [
-      "SPARE PARTS"
-    ],
+    "category": ["SPARE PARTS"],
     "occupation": "Spare parts "
   },
   {
@@ -384,9 +360,7 @@
     "communicationAddress": "Shanti nagar gali no.2 rajnandgaon ",
     "mobile": "6260297195",
     "whatsapp": "6260297195",
-    "category": [
-      "SCRAP"
-    ],
+    "category": ["SCRAP"],
     "occupation": "Business"
   },
   {
@@ -399,9 +373,7 @@
     "communicationAddress": "Gauri Nagar Guru Nagar colony",
     "mobile": "9630403437",
     "whatsapp": "9630403437",
-    "category": [
-      "LIFESTYLE"
-    ],
+    "category": ["LIFESTYLE"],
     "occupation": "Business"
   },
   {
@@ -414,10 +386,21 @@
     "communicationAddress": "Ganj chowk ",
     "mobile": "09399633261",
     "whatsapp": "9399633261",
-    "category": [
-      "SCRAP"
-    ],
+    "category": ["SCRAP"],
     "occupation": "Business"
+  },
+  {
+    "id": "reccT0YWoD9HrPGq6",
+    "name": "AAHIL AUTO DILL",
+    "owner": "Sheikh Meraj ",
+    "description": "Hmare yaha sabhi prkar ke second hand car\nAnd 2 whilaer 4 while uplabdh hai ",
+    "type": "",
+    "address": "Hira moti line ",
+    "communicationAddress": "Jama masjid pthan para ",
+    "mobile": "(930) 381-2349",
+    "whatsapp": "(930) 381-2349",
+    "category": ["SECOND-HAND-CAR-BIKE-DEALER"],
+    "occupation": "Auto parts & auto dealing"
   },
   {
     "id": "recdinqAtiYMmeKXV",
@@ -429,9 +412,7 @@
     "communicationAddress": "Tulsipur",
     "mobile": "8319157700",
     "whatsapp": "9809346716",
-    "category": [
-      "IT"
-    ],
+    "category": ["IT"],
     "occupation": "Job"
   },
   {
@@ -444,9 +425,7 @@
     "communicationAddress": "RAMADIN MARG , AGRASEN BHAWAN ROAD, JALARAM FURNITURE KE BAJU RAJNANDGAON ",
     "mobile": "7725094773",
     "whatsapp": "7725094773",
-    "category": [
-      "WHOLESELLER AND RETAILER"
-    ],
+    "category": ["WHOLESELLER AND RETAILER"],
     "occupation": "Business"
   },
   {
@@ -459,9 +438,7 @@
     "communicationAddress": "कंचन बाग",
     "mobile": "7805819667",
     "whatsapp": "7805819667",
-    "category": [
-      "REAL ESTATE"
-    ],
+    "category": ["REAL ESTATE"],
     "occupation": "Business"
   },
   {
@@ -474,9 +451,7 @@
     "communicationAddress": "",
     "mobile": "9827177261",
     "whatsapp": "9131052771",
-    "category": [
-      "OTHERS"
-    ],
+    "category": ["OTHERS"],
     "occupation": "Business"
   },
   {
@@ -489,9 +464,7 @@
     "communicationAddress": "",
     "mobile": "9424135338",
     "whatsapp": "9424135338",
-    "category": [
-      "SPARE PARTS"
-    ],
+    "category": ["SPARE PARTS"],
     "occupation": "Auto parts & auto dealing"
   },
   {
@@ -504,9 +477,7 @@
     "communicationAddress": "Jama masjid Rajnandgaon Chhattisgarh ",
     "mobile": "9303812349",
     "whatsapp": "9303812349",
-    "category": [
-      "AUTOMOBILES"
-    ],
+    "category": ["AUTOMOBILES"],
     "occupation": "Business"
   },
   {
@@ -519,9 +490,7 @@
     "communicationAddress": "",
     "mobile": "06264358040 -9630068040",
     "whatsapp": "6264358040",
-    "category": [
-      "REAL ESTATE"
-    ],
+    "category": ["REAL ESTATE"],
     "occupation": "Business"
   },
   {
@@ -534,9 +503,7 @@
     "communicationAddress": "DONGARGARH, RAJNANDGAON ",
     "mobile": "8962808182",
     "whatsapp": "8962808182",
-    "category": [
-      "OTHERS"
-    ],
+    "category": ["OTHERS"],
     "occupation": "Job"
   },
   {
@@ -549,9 +516,20 @@
     "communicationAddress": "Ring Road chauk Bhanpuri Raipur Chhattisgarh ",
     "mobile": "7869204303",
     "whatsapp": "7869204303",
-    "category": [
-      "OTHERS"
-    ],
+    "category": ["OTHERS"],
+    "occupation": "Business"
+  },
+  {
+    "id": "recnSzuQUyATRBiKR",
+    "name": "Altaf फ्लावर्स",
+    "owner": "Altaf flowers ",
+    "description": "बिजनेस",
+    "type": "",
+    "address": "Gol bazar fal market Rajnandgaon ",
+    "communicationAddress": "Gol bazar fal market Rajnandgaon ",
+    "mobile": "(909) 853-9572",
+    "whatsapp": "(909) 853-9572",
+    "category": ["OTHERS"],
     "occupation": "Business"
   },
   {
@@ -564,9 +542,7 @@
     "communicationAddress": "Zam Zam complex, Math para, Rajnandgaon",
     "mobile": "6263429595",
     "whatsapp": "6263429595",
-    "category": [
-      "WHOLESELLER AND RETAILER"
-    ],
+    "category": ["WHOLESELLER AND RETAILER"],
     "occupation": "Business"
   },
   {
@@ -579,9 +555,7 @@
     "communicationAddress": "Hat Bazar Rajnandgaon ",
     "mobile": "8319311044",
     "whatsapp": "8319311044",
-    "category": [
-      "ELECTRONICS"
-    ],
+    "category": ["ELECTRONICS"],
     "occupation": "Business"
   },
   {
@@ -594,9 +568,7 @@
     "communicationAddress": "",
     "mobile": "7869240492",
     "whatsapp": "7869240492",
-    "category": [
-      "OTHERS"
-    ],
+    "category": ["OTHERS"],
     "occupation": "Hijama Therapist & Unani Hakim"
   },
   {
@@ -609,9 +581,7 @@
     "communicationAddress": "",
     "mobile": "7389363197",
     "whatsapp": "7389363197",
-    "category": [
-      "ELECTRONICS"
-    ],
+    "category": ["ELECTRONICS"],
     "occupation": "Business"
   },
   {
@@ -624,9 +594,7 @@
     "communicationAddress": "Saagar nagar,rajnandgaon.cg",
     "mobile": "9329584475",
     "whatsapp": "9329584475",
-    "category": [
-      "EMERGENCY"
-    ],
+    "category": ["EMERGENCY"],
     "occupation": "Job"
   },
   {
@@ -639,9 +607,7 @@
     "communicationAddress": "",
     "mobile": "7869044792",
     "whatsapp": "7869044792",
-    "category": [
-      "IT"
-    ],
+    "category": ["IT"],
     "occupation": "Job"
   },
   {
@@ -654,9 +620,7 @@
     "communicationAddress": "Rjn Kanharpuri ward 34 near by Govt School ",
     "mobile": "8839991471",
     "whatsapp": "9993545122",
-    "category": [
-      "IT"
-    ],
+    "category": ["IT"],
     "occupation": "Business"
   },
   {
@@ -669,9 +633,7 @@
     "communicationAddress": "Gauri Nagar Guru Nagar colony",
     "mobile": "9630403437",
     "whatsapp": "9630403437",
-    "category": [
-      "LIFESTYLE"
-    ],
+    "category": ["LIFESTYLE"],
     "occupation": "Business"
   },
   {
@@ -684,9 +646,7 @@
     "communicationAddress": "zunaidk292@gmail.com\n8319757572",
     "mobile": "08319757572",
     "whatsapp": "8319757572",
-    "category": [
-      "LIFESTYLE"
-    ],
+    "category": ["LIFESTYLE"],
     "occupation": "Business"
   },
   {
@@ -699,25 +659,8 @@
     "communicationAddress": "Kailash Nagar behind United hospital Rajnandgaon",
     "mobile": "9589341313",
     "whatsapp": "9589341313",
-    "category": [
-      "BANKER"
-    ],
+    "category": ["BANKER"],
     "occupation": "Job"
-  },
-  {
-    "id": "recsrnBPpDbKLBsmI",
-    "name": "Ameen motors",
-    "owner": "Firoj Ahmad",
-    "description": "Battery e rickshaw sale purchase",
-    "type": "",
-    "address": "PTS ke pass National Highway Rajnandgaon",
-    "communicationAddress": "",
-    "mobile": "(834) 911-6040",
-    "whatsapp": "9827174038",
-    "category": [
-      "OTHERS"
-    ],
-    "occupation": "Business"
   },
   {
     "id": "recuz7hnlwy8CRpKE",
@@ -729,9 +672,7 @@
     "communicationAddress": "Dongargaon",
     "mobile": "7974919979",
     "whatsapp": "7974919979",
-    "category": [
-      "FABRICATION"
-    ],
+    "category": ["FABRICATION"],
     "occupation": "Business"
   },
   {
@@ -744,9 +685,7 @@
     "communicationAddress": "",
     "mobile": "9340486726",
     "whatsapp": "9340486726",
-    "category": [
-      "ELECTRONICS"
-    ],
+    "category": ["ELECTRONICS"],
     "occupation": "Business"
   },
   {
@@ -759,9 +698,7 @@
     "communicationAddress": "",
     "mobile": "9630403437",
     "whatsapp": "9630403437",
-    "category": [
-      "LIFESTYLE"
-    ],
+    "category": ["LIFESTYLE"],
     "occupation": "Business"
   },
   {
@@ -774,10 +711,21 @@
     "communicationAddress": "Ward no 16 Dongargarh ",
     "mobile": "9644600816",
     "whatsapp": "9644600816",
-    "category": [
-      "BANKER"
-    ],
+    "category": ["BANKER"],
     "occupation": "Business loan"
+  },
+  {
+    "id": "recx2GWdMdwa3ckXr",
+    "name": "Ameen motors",
+    "owner": "Firoj Ahmad",
+    "description": "E rickshaw showroom\nbattery spare parts repairing",
+    "type": "",
+    "address": "Pyarelal chauk Pani Tanki ke niche GE road Rajnandgaon",
+    "communicationAddress": "PDS National Highway Rajnandgaon",
+    "mobile": "(982) 717-4038",
+    "whatsapp": "(982) 717-4038 2",
+    "category": ["AUTOMOBILES"],
+    "occupation": "Business"
   },
   {
     "id": "recys3MwLZORbaWNI",
@@ -789,9 +737,7 @@
     "communicationAddress": "Gauri Nagar ward number 13 School Ground Rajnandgaon ",
     "mobile": "(982) 740-0000",
     "whatsapp": "9630015786",
-    "category": [
-      "FABRICATION"
-    ],
+    "category": ["FABRICATION"],
     "occupation": "Business"
   },
   {
@@ -804,9 +750,7 @@
     "communicationAddress": "Nandai chowk Rajnandgaon ",
     "mobile": "9685321642",
     "whatsapp": "9685321642",
-    "category": [
-      "OTHERS"
-    ],
+    "category": ["OTHERS"],
     "occupation": "Business"
   }
 ]
