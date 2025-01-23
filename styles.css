@@ -550,6 +550,10 @@ body {
     justify-content: center;
   }
 
+  .developer-info a {
+    justify-content: center;
+  }
+
   .btn-list-business {
     padding: 0.875rem 2rem;
     font-size: 1rem;
