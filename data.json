@@ -104,6 +104,19 @@
     "occupation": "Job"
   },
   {
+    "id": "rec9pQyr56nDxEnDE",
+    "name": "रज़ा सीट कवर डोंगरगढ़ ",
+    "owner": "मो अजीम गोरी ",
+    "description": "Seat Cover",
+    "type": "",
+    "address": "रज़ा सीट कवर कचरी चौक डोंगरगढ़\n",
+    "communicationAddress": "रज़ा सीट कवर ",
+    "mobile": "(992) 655-7988",
+    "whatsapp": "(992) 655-7988",
+    "category": ["OTHERS"],
+    "occupation": "Business"
+  },
+  {
     "id": "recBKQvoeeiceyLoy",
     "name": "K G N  lock marchent",
     "owner": "Kalim khan",
@@ -258,6 +271,19 @@
     "whatsapp": "7974298075",
     "category": ["REAL ESTATE"],
     "occupation": "Real estate"
+  },
+  {
+    "id": "recQ0D5QA3rrIrPSz",
+    "name": "Falak Tent House event management",
+    "owner": "Firoz Khan",
+    "description": "All types management",
+    "type": "",
+    "address": "Labour Colony near Pyarelal School Rajnandgaon",
+    "communicationAddress": "Labour Colony near Pyarelal School Rajnandgaon",
+    "mobile": "9827185288..9826104114",
+    "whatsapp": "(982) 718-5288",
+    "category": ["DECORATION"],
+    "occupation": "Business"
   },
   {
     "id": "recUWdQInSVA2XZaZ",
