@@ -31,11 +31,11 @@
         border: none;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s, box-shadow 0.2s;
+        transition: transform 0.3s, box-shadow 0.3s;
       }
       .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-15px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
       }
       .card-body {
         padding: 20px;
@@ -73,6 +73,59 @@
         font-weight: 500;
         color: #495057;
       }
+
+      /* Improved Pagination Styles */
+      .pagination {
+        justify-content: center;
+      }
+
+      .pagination .page-link {
+        padding: 8px 16px;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: white;
+        margin: 0 4px;
+        transition: background-color 0.2s, transform 0.2s;
+      }
+
+      .pagination .page-link:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+      }
+
+      .pagination .page-item.active .page-link {
+        background-color: #0056b3;
+        border-color: #0056b3;
+        font-weight: bold;
+      }
+
+      .pagination .page-item.disabled .page-link {
+        background-color: #e9ecef;
+        color: #6c757d;
+        pointer-events: none;
+        cursor: default;
+      }
+
+      /* Enhanced Footer Styles */
+      footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding: 20px 0;
+      }
+
+      footer a {
+        color: #ffc107;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Additional Styles for Better Layout */
+      .container.my-4 {
+        max-width: 1200px;
+      }
     </style>
   </head>
   <body>
@@ -88,13 +141,16 @@
           <option value="">All Categories</option>
         </select>
       </div>
+
+      <!-- Add Search Bar -->
       <div class="mb-3">
-        <label for="occupationFilter" class="form-label"
-          >Filter by Occupation</label
-        >
-        <select class="form-select" id="occupationFilter">
-          <option value="">All Occupations</option>
-        </select>
+        <label for="searchInput" class="form-label">Search Businesses</label>
+        <input
+          type="text"
+          class="form-control"
+          id="searchInput"
+          placeholder="Enter business name or category"
+        />
       </div>
 
       <!-- Cards Container -->
@@ -117,17 +173,51 @@
           </div>
         </div>
       </div>
+      <!-- Pagination Controls -->
+      <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <button class="page-link" id="prevPage">Previous</button>
+          </li>
+          <li class="page-item">
+            <span class="page-link" id="currentPage">1</span>
+          </li>
+          <li class="page-item">
+            <button class="page-link" id="nextPage">Next</button>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <!-- Footer Section -->
-    <footer class="text-center mt-4">
-      <div class="mb-4">
-        <a
-          href="https://airtable.com/apptWWOkVCRAJp9al/shr3YYzYmzoUa4SlK"
-          class="btn btn-primary"
-        >
-          Request to Add Details
-        </a>
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>
+              &copy; 2024 Rajnandgaon Business Directory. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact</h5>
+            <p>
+              Email:
+              <a href="mailto:memonyasin3@gmail.com" class="text-warning"
+                >memonyasin3@gmail.com</a
+              >
+            </p>
+            <p>Phone: 7869044792</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Get Involved</h5>
+            <a
+              href="https://airtable.com/apptWWOkVCRAJp9al/shr3YYzYmzoUa4SlK"
+              class="btn btn-primary"
+              >Request to Add Details</a
+            >
+          </div>
+        </div>
       </div>
     </footer>
   </body>
