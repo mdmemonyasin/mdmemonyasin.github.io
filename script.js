@@ -27,13 +27,14 @@ const renderCards = (businesses, page = 1) => {
     card.innerHTML = `
       <div class="card h-100">
         <div class="card-body">
+          <span class="highlight-category">${business.category}</span>
           <h5 class="card-title">${business.name}</h5>
           <p class="card-text">Owner: ${business.owner}</p>
-          <p class="card-text">Type: ${business.type}</p>
-          <p class="card-text">Address: ${business.address}</p>
-          <p class="card-text">Mobile: <a href="tel:${business.mobile}">${business.mobile}</a></p>
-          <p class="card-text">WhatsApp: <a href="https://wa.me/${business.whatsapp}" target="_blank">${business.whatsapp}</a></p>
-          <p class="card-text">Category: ${business.category}</p>
+          <div class="contact-info">
+            <p><i class="ri-phone-line me-2"></i><a href="tel:${business.mobile}">${business.mobile}</a></p>
+            <p><i class="ri-whatsapp-line me-2"></i><a href="https://wa.me/${business.whatsapp}" target="_blank">${business.whatsapp}</a></p>
+            <p><i class="ri-map-pin-line me-2"></i>${business.address}</p>
+          </div>
         </div>
       </div>
     `;
@@ -99,22 +100,71 @@ const applyFilter = (businesses) => {
 };
 
 const setupPagination = (businesses) => {
-  const prevPageBtn = document.getElementById("prevPage");
-  const nextPageBtn = document.getElementById("nextPage");
+  const paginationContainer = document.getElementById("pagination");
+  const totalPages = Math.ceil(businesses.length / ITEMS_PER_PAGE);
 
-  prevPageBtn.addEventListener("click", () => {
-    if (currentPage > 1) {
-      currentPage--;
-      renderCards(businesses, currentPage);
-    }
-  });
+  const updatePagination = () => {
+    let paginationHTML = `
+      <button class="btn btn-sm btn-outline-primary me-2" id="prevPage" ${
+        currentPage === 1 ? "disabled" : ""
+      }>
+        <i class="ri-arrow-left-s-line"></i>
+      </button>
+    `;
 
-  nextPageBtn.addEventListener("click", () => {
-    if (currentPage * ITEMS_PER_PAGE < businesses.length) {
-      currentPage++;
-      renderCards(businesses, currentPage);
+    for (let i = 1; i <= totalPages; i++) {
+      if (
+        i === 1 ||
+        i === totalPages ||
+        (i >= currentPage - 1 && i <= currentPage + 1)
+      ) {
+        paginationHTML += `
+          <button class="btn btn-sm ${
+            i === currentPage ? "btn-primary" : "btn-outline-primary"
+          } me-2 page-number">${i}</button>
+        `;
+      } else if (i === currentPage - 2 || i === currentPage + 2) {
+        paginationHTML += `<span class="mx-1">...</span>`;
+      }
     }
-  });
+
+    paginationHTML += `
+      <button class="btn btn-sm btn-outline-primary" id="nextPage" ${
+        currentPage === totalPages ? "disabled" : ""
+      }>
+        <i class="ri-arrow-right-s-line"></i>
+      </button>
+    `;
+
+    paginationContainer.innerHTML = paginationHTML;
+
+    // Add event listeners
+    document.getElementById("prevPage").addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderCards(businesses, currentPage);
+        updatePagination();
+      }
+    });
+
+    document.getElementById("nextPage").addEventListener("click", () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderCards(businesses, currentPage);
+        updatePagination();
+      }
+    });
+
+    document.querySelectorAll(".page-number").forEach((button) => {
+      button.addEventListener("click", (e) => {
+        currentPage = parseInt(e.target.textContent);
+        renderCards(businesses, currentPage);
+        updatePagination();
+      });
+    });
+  };
+
+  updatePagination();
 };
 
 const init = async () => {
