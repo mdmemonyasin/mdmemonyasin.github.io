@@ -7,17 +7,70 @@
   --radius: 10px;
 }
 
+/* Base Styles */
 body {
   background-color: var(--bg-light);
   padding-top: 70px;
 }
 
+/* Navbar Styles */
+.navbar {
+  background: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.navbar-brand i {
+  margin-right: 0.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-link i {
+  font-size: 1.1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary);
+}
+
+.navbar .btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  padding: 0.5rem 1.25rem;
+}
+
 /* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: white;
+  color: white !important; /* Force white color */
   padding: 5rem 0 4rem;
   margin-bottom: 0;
+  text-align: center;
+}
+
+.hero-section * {
+  color: white !important; /* Ensure all child elements inherit white color */
+}
+
+.hero-content h1,
+.hero-content .lead {
+  color: white !important;
+  opacity: 1;
 }
 
 .hero-content h1 {
@@ -101,47 +154,6 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* Navbar Styles */
-.navbar {
-  background: white;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-  color: var(--primary);
-  font-weight: 600;
-  font-size: 1.25rem;
-}
-
-.navbar-brand i {
-  margin-right: 0.5rem;
-}
-
-.nav-link {
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  color: var(--text-dark);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.nav-link i {
-  font-size: 1.1rem;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: var(--primary);
-}
-
-.navbar .btn-primary {
-  background-color: var(--primary);
-  border-color: var(--primary);
-  padding: 0.5rem 1.25rem;
-}
-
 /* Enhanced Hero Search */
 .hero-search {
   margin-top: 2rem;
@@ -193,15 +205,14 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     padding: 3rem 0;
-    text-align: center;
   }
 
   .hero-content h1 {
     font-size: 2rem;
   }
 
-  .search-section {
-    padding: 1rem;
+  .search-filter-section {
+    padding: 1rem 0;
   }
 
   .search-wrapper {
@@ -258,9 +269,6 @@ body {
   }
 }
 
-/* Keep existing card and pagination styles */
-// ...existing styles...
-
 /* Main Content Spacing */
 .main-content {
   padding: 2rem 0 4rem;
@@ -298,4 +306,138 @@ body {
   margin: 0 0.75rem;
 }
 
-// ...existing code...
+/* Footer Styles */
+.footer {
+  background: white;
+  padding: 4rem 0 2rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 4rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer-logo {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.footer-description {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.footer-section h5 {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-links a i {
+  font-size: 0.875rem;
+  color: var(--primary);
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.footer-bottom {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: #6b7280;
+}
+
+.footer-bottom p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-links a {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    margin-top: 2rem;
+  }
+}
+
+/* ...existing code... */
