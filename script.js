@@ -60,6 +60,11 @@ const renderCards = (businesses, page = 1) => {
           <p class="card-text"><i class="ri-user-line"></i> ${
             business.owner
           }</p>
+          ${
+            business.description
+              ? `<p class="card-text description">${business.description}</p>`
+              : ""
+          }
           <div class="contact-info">
             <a href="tel:${
               business.mobile
